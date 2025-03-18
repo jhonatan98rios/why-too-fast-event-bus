@@ -2,7 +2,7 @@
 
 ### "Because normal speed just isn't enough."
 
-Welcome to WhySoFastEventBus, the event bus that is unnecessarily fast. Do you really need this much performance? Probably not. But here we are. Whether you're making a game in PyGame or designing a complex microservices system, this absurdly fast event bus will ensure your messages arrive at speeds you never asked for.
+Welcome to WhyTooFastEventBus, the event bus that is unnecessarily fast. Do you really need this much performance? Probably not. But here we are. Whether you're making a game in PyGame or designing a complex microservices system, this absurdly fast event bus will ensure your messages arrive at speeds you never asked for.
 
 ## 🚀 Why Use This?
 
