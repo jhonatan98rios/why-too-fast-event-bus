@@ -1,0 +1,15 @@
+[package]
+name = "why_too_fast_event_bus_module"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module"] }
+tokio = { version = "1", features = ["full"] }
+
+[lib]
+name = "why_too_fast_event_bus_module"
+crate-type = ["cdylib"]  # Required for Python bindings
+
+[profile.release]
+opt-level = 3
