@@ -1,4 +1,4 @@
-# WhySoFastEventBus 🚀🤔
+# WhyTooFastEventBus 🚀🤔
 
 ### "Because normal speed just isn't enough."
 
