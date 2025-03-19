@@ -15,11 +15,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.8'
-
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
 
@@ -39,10 +34,7 @@ jobs:
         run: maturin develop --target-dir target
 
       - name: Run Python Tests
-        run: pytest tests
-
-      - name: Run Tests with Coverage
-        run: pytest --cov --cov-branch --cov-report=xml
+        run: pytest -vv
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
