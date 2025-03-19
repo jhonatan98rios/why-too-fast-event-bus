@@ -42,7 +42,7 @@ jobs:
         run: pytest tests
 
       - name: Run Tests with Coverage
-        run: pytest --cov=why_too_fast_event_bus --cov-report=xml
+        run: pytest --cov --cov-branch --cov-report=xml
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
