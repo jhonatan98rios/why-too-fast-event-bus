@@ -1,0 +1,16 @@
+[build-system]
+requires = ["maturin"]
+build-backend = "maturin"
+
+[project]
+name = "why-too-fast-event-bus"
+version = "0.1.0"
+description = "An async event bus for Python using Rust"
+authors = [{ name = "Jhonatan Teixeira Rios", email = "jhonatan.dev.rios@gmail.com" }]
+readme = "README.md"
+license = "MIT"
+dependencies = []
+
+[tool.maturin]
+bindings = "pyo3"
+python-packages = ["why_too_fast_event_bus"]

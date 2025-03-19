@@ -12,4 +12,11 @@ name = "why_too_fast_event_bus_module"
 crate-type = ["cdylib"]  # Required for Python bindings
 
 [profile.release]
-opt-level = 3
+strip = true  # Reduce binary size
+
+[build-system]
+requires = ["maturin>=1.0"]
+build-backend = "maturin"
+
+[package.metadata.maturin]
+python-packages = ["why_too_fast_event_bus"]  # Include Python files in the package
