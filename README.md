@@ -1,5 +1,12 @@
 # WhyTooFastEventBus 🚀🤔
 
+<div align="center">
+    <img src="https://github.com/jhonatan98rios/why-too-fast-event-bus/actions/workflows/tests.yml/badge.svg" alt="Tests" style="display: inline-block; margin-right: 10px;">
+    <a href="https://codecov.io/gh/jhonatan98rios/why-too-fast-event-bus">
+        <img src="https://codecov.io/gh/jhonatan98rios/why-too-fast-event-bus/branch/main/graph/badge.svg" alt="codecov" style="display: inline-block;">
+    </a>
+</div>
+
 ### "Because normal speed just isn't enough."
 
 Welcome to WhyTooFastEventBus, the event bus that is unnecessarily fast. Do you really need this much performance? Probably not. But here we are. Whether you're making a game in PyGame or designing a complex microservices system, this absurdly fast event bus will ensure your messages arrive at speeds you never asked for.
