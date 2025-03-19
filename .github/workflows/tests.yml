@@ -1,0 +1,28 @@
+name: CI - Build & Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: Run Rust & Python Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install Dependencies
+        run: |
+          rustup target add x86_64-unknown-linux-gnu
+          pip install --upgrade pip setuptools wheel maturin pytest
+
+      - name: Build Python Package
+        run: maturin develop
+
+      - name: Run Python Tests
+        run: pytest tests
