@@ -1,5 +1,5 @@
 [package]
-name = "why_too_fast_event_bus_module"
+name = "why_too_fast_event_bus"
 version = "0.1.0"
 edition = "2021"
 
